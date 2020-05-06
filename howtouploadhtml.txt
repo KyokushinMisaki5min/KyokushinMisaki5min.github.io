@@ -1,0 +1,12 @@
+mkdir KyokushinMisaki5min.github.io
+cd KyokushinMisaki5min.github.io
+git init
+echo "ただいまメンテナンス作業を行っておりますのでしばらくお待ちください" > index.html
+git add .
+git commit -m "added index.html"
+git remote add origin https://github.com/KyokushinMisaki5min/KyokushinMisaki5min.github.io.git
+git push -u origin master
+cp ../index.html .
+git add .
+git commit -m "new index.html"
+git push origin master
